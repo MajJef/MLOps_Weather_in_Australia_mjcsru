@@ -5,4 +5,5 @@ matplotlib
 seaborn
 mlflow
 dvc
+pytest==6.2.5  # or any version you are using
 
