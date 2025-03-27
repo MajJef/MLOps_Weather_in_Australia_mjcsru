@@ -4,4 +4,4 @@ joblib
 numpy
 xgboost
 python-multipart
-
+pytest
