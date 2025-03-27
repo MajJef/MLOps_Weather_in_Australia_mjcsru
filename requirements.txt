@@ -5,3 +5,5 @@ numpy
 xgboost
 python-multipart
 pytest
+scikit-learn   #(XGBoost needs it)
+
