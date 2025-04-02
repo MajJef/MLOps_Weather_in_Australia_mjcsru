@@ -5,5 +5,20 @@ numpy
 xgboost
 python-multipart
 pytest
-scikit-learn   #(XGBoost needs it)
+scikit-learn  # (XGBoost needs it)
+
+# Additional required libraries
+dvc
+dvc[s3]
+pandas
+mlflow==2.2.2
+notebook
+matplotlib
+pydantic==2.7.4
+python-box==6.0.2
+pyYAML
+tqdm
+ensure==1.0.2
+types-PyYAML
+dagshub
 
