@@ -7,7 +7,7 @@ This repository contains an MLOps pipeline for analyzing weather data in Austral
 ## 📂 Project Structure  
 
 
-
+```bash
 MLOps_Weather_in_Australia/
 │── data/ # Raw & processed data
 │ ├── raw/ # Original dataset
@@ -51,14 +51,10 @@ MLOps_Weather_in_Australia/
 │── README.md # Project documentation
 │── init.py
 
-
+```
 
 ---
 
 ## 🚀 Getting Started
 
 ### **1️⃣ Install Dependencies**  
-Run the following command to install the required Python packages:  
-
-```bash
-pip install -r requirements.txt
