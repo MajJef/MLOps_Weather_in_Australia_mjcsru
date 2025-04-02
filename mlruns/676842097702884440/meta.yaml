@@ -1,0 +1,6 @@
+artifact_location: file:///Users/mj/repo/MLOps_Weather_in_Australia_mjcsru/mlruns/676842097702884440
+creation_time: 1743082625402
+experiment_id: '676842097702884440'
+last_update_time: 1743082625402
+lifecycle_stage: active
+name: WeatherPrediction_XGBoost

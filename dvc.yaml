@@ -1,0 +1,17 @@
+stages:
+  preprocess:
+    cmd: python src/data_module_def/data_ingestion.py
+    deps:
+      - src/data_module_def/data_ingestion.py
+      - weatherAUS.csv
+    outs:
+      - data/processed/
+
+  train:
+    cmd: python train.py
+    deps:
+      - train.py
+      - data/processed/
+    outs:
+      - xgboost_model.pkl
+

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/mj/repo/MLOps_Weather_in_Australia_mjcsru/mlruns/676842097702884440/ec2bc929f28142d4960a5f37467e04c7/artifacts
+end_time: 1743082720452
+entry_point_name: ''
+experiment_id: '676842097702884440'
+lifecycle_stage: active
+run_id: ec2bc929f28142d4960a5f37467e04c7
+run_name: legendary-shrike-75
+run_uuid: ec2bc929f28142d4960a5f37467e04c7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743082625483
+status: 3
+tags: []
+user_id: mj

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/mj/repo/MLOps_Weather_in_Australia_mjcsru/mlruns/676842097702884440/c70b281b45cb47dba487f861d15f6b8b/artifacts
+end_time: 1743086011560
+entry_point_name: ''
+experiment_id: '676842097702884440'
+lifecycle_stage: active
+run_id: c70b281b45cb47dba487f861d15f6b8b
+run_name: secretive-turtle-935
+run_uuid: c70b281b45cb47dba487f861d15f6b8b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743085963458
+status: 3
+tags: []
+user_id: mj

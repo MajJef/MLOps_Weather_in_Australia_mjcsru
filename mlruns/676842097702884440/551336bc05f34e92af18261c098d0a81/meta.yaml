@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/mj/repo/MLOps_Weather_in_Australia_mjcsru/mlruns/676842097702884440/551336bc05f34e92af18261c098d0a81/artifacts
+end_time: 1743571531634
+entry_point_name: ''
+experiment_id: '676842097702884440'
+lifecycle_stage: active
+run_id: 551336bc05f34e92af18261c098d0a81
+run_name: thundering-doe-507
+run_uuid: 551336bc05f34e92af18261c098d0a81
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743571486157
+status: 3
+tags: []
+user_id: mj
