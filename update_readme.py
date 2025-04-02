@@ -2,7 +2,7 @@ import os
 
 def generate_readme():
     root_dir = "."  # Current directory
-    ignore_files = {".git", ".dvc", "__pycache__", ".github", "update_readme.py", "README.md"}
+    ignore_files = {".git", ".dvc", "__pycache__", "update_readme.py", "README.md"}
     
     def list_files(start_path, indent=0):
         result = ""
