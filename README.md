@@ -17,7 +17,7 @@
 - 📄 Untitled-2.ipynb
 - 📄 Weather in Australia.pdf
 - 📄 dvc.yaml
-- 📄 main.py
+- 📄 app.py
 - 📂 mlruns/
   - 📂 .trash/
   - 📂 0/
