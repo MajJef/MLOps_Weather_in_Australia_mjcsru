@@ -31,7 +31,7 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/MajJef/MLOps_Weather_in_Australia_mjcsru.git
+          git remote set-url origin https://x-access-token:${{ secrets.TOKEN }}@github.com/MajJef/MLOps_Weather_in_Australia_mjcsru.git
           git add README.md
           git commit -m "Automated README update" || echo "No changes to commit"
           git push origin main
