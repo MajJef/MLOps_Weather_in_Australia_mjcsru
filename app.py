@@ -1,36 +1,26 @@
 from fastapi import FastAPI, HTTPException
-import joblib
+from pydantic import BaseModel
 import numpy as np
+import joblib
 
 app = FastAPI()
 
-# Load the saved model
+# Load your model
 try:
-    model = joblib.load("xgboost_model.pkl")
+    model = joblib.load("xgboost_model.pkl")  # Or '/app/xgboost_model.pkl' inside Docker
 except Exception as e:
     raise RuntimeError(f"Error loading model: {str(e)}")
 
-@app.get("/")
-def home():
-    return {"message": "Welcome to the Rain Prediction API!"}
+# Define a data model for incoming requests
+class InputData(BaseModel):
+    data: list[float]  # Expecting a list of numbers
 
 @app.post("/predict")
-def predict(data: list):
-    """
-    Send a list of feature values to get a prediction.
-    Example:
-    {
-      "data": [0.1, 0.2, 0.3, 0.4, ...]  # Replace with real features
-    }
-    """
+def predict(input_data: InputData):
     try:
-        # Ensure the input is a list of numbers
-        if not isinstance(data, list) or not all(isinstance(x, (int, float)) for x in data):
-            raise HTTPException(status_code=400, detail="Input must be a list of numbers.")
-
-        prediction = model.predict([np.array(data)])
+        features = np.array(input_data.data).reshape(1, -1)  # Convert list to NumPy array
+        prediction = model.predict(features)
         return {"prediction": int(prediction[0])}
-
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Prediction error: {str(e)}")
 
