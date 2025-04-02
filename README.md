@@ -1,60 +1,79 @@
-# MLOps Weather in Australia 🌦️  
+# MLOps Weather in Australia
 
-This repository contains an MLOps pipeline for analyzing weather data in Australia. The goal is to build, train, and deploy a machine learning model for weather prediction.  
+## Project Structure
 
----
-
-## 📂 Project Structure  
-
-
-```bash
-MLOps_Weather_in_Australia/
-│── data/ # Raw & processed data
-│ ├── raw/ # Original dataset
-│ ├── processed/ # Transformed dataset
-│
-│── logs/ # Logs from training & processing
-│── metrics/ # Evaluation results
-│── notebooks/ # Jupyter notebooks for exploration
-│ ├── workflow_steps.ipynb # Step-by-step notebook
-│
-│── src/ # Main source code
-│ ├── common_utils.py # Helper functions
-│ ├── config.yaml # Config file (paths & settings)
-│ ├── params.yaml # Model hyperparameters
-│ ├── config_manager.py # Configuration manager
-│ │
-│ ├── app/ # API for model inference
-│ │ ├── app.py
-│ │
-│ ├── data_module_def/ # Data processing
-│ │ ├── data_ingestion.py
-│ │ ├── data_validation.py
-│ │ ├── data_transformation.py
-│ │ ├── schema.yaml # Dataset structure
-│ │
-│ ├── models_module_def/ # Model training & evaluation
-│ │ ├── model_trainer.py
-│ │ ├── model_evaluation.py
-│ │
-│ ├── pipeline_steps/ # MLOps pipeline steps
-│ ├── stage01_data_ingestion.py
-│ ├── stage02_data_validation.py
-│ ├── stage03_data_transformation.py
-│ ├── stage04_model_trainer.py
-│ ├── stage05_model_evaluation.py
-│
-│── requirements.txt # Required Python packages
-│── .gitignore # Files to ignore in Git
-│── .dvcignore # Files to ignore in DVC
-│── dvc.yaml # DVC pipeline configuration
-│── README.md # Project documentation
-│── init.py
-
-```
-
----
-
-## 🚀 Getting Started
-
-### **1️⃣ Install Dependencies**  
+- 📄 .DS_Store
+- 📄 .dvcignore
+- 📄 .gitattributes
+- 📄 .gitignore
+- 📂 .pytest_cache/
+  - 📄 .gitignore
+  - 📄 CACHEDIR.TAG
+  - 📂 v/
+    - 📂 cache/
+      - 📄 nodeids
+      - 📄 stepwise
+- 📄 Dockerfile
+- 📄 Untitled-2.ipynb
+- 📄 Weather in Australia.pdf
+- 📄 dvc.yaml
+- 📄 main.py
+- 📂 mlruns/
+  - 📂 .trash/
+  - 📂 0/
+    - 📄 meta.yaml
+  - 📂 676842097702884440/
+    - 📂 551336bc05f34e92af18261c098d0a81/
+      - 📂 artifacts/
+      - 📄 meta.yaml
+      - 📂 metrics/
+        - 📄 accuracy
+        - 📄 roc_auc
+      - 📂 params/
+        - 📄 model
+        - 📄 n_components
+      - 📂 tags/
+        - 📄 mlflow.runName
+        - 📄 mlflow.source.git.commit
+        - 📄 mlflow.source.name
+        - 📄 mlflow.source.type
+        - 📄 mlflow.user
+    - 📂 c70b281b45cb47dba487f861d15f6b8b/
+      - 📂 artifacts/
+      - 📄 meta.yaml
+      - 📂 metrics/
+        - 📄 accuracy
+        - 📄 roc_auc
+      - 📂 params/
+        - 📄 model
+        - 📄 n_components
+      - 📂 tags/
+        - 📄 mlflow.runName
+        - 📄 mlflow.source.git.commit
+        - 📄 mlflow.source.name
+        - 📄 mlflow.source.type
+        - 📄 mlflow.user
+    - 📂 ec2bc929f28142d4960a5f37467e04c7/
+      - 📂 artifacts/
+      - 📄 meta.yaml
+      - 📂 metrics/
+        - 📄 accuracy
+        - 📄 roc_auc
+      - 📂 params/
+        - 📄 model
+        - 📄 n_components
+      - 📂 tags/
+        - 📄 mlflow.runName
+        - 📄 mlflow.source.git.commit
+        - 📄 mlflow.source.name
+        - 📄 mlflow.source.type
+        - 📄 mlflow.user
+    - 📄 meta.yaml
+  - 📂 models/
+- 📄 requirements.txt
+- 📂 tests/
+  - 📄 test_example.py
+- 📄 train.py
+- 📄 weatherAUS.csv
+- 📄 xgboost_model.pkl
+- 📄 xgboost_model.pkl.dvc
