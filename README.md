@@ -5,26 +5,24 @@
 - 📄 .DS_Store
 - 📄 .dvcignore
 - 📄 .gitattributes
+- 📂 .github/
+  - 📂 workflows/
+    - 📄 ci-cd.yml
+    - 📄 mlops_pipeline.yml
+    - 📄 update_readme.yml
 - 📄 .gitignore
-- 📂 .pytest_cache/
-  - 📄 .gitignore
-  - 📄 CACHEDIR.TAG
-  - 📂 v/
-    - 📂 cache/
-      - 📄 nodeids
-      - 📄 stepwise
 - 📄 Dockerfile
-- 📄 Untitled-2.ipynb
 - 📄 Weather in Australia.pdf
-- 📄 dvc.yaml
 - 📄 app.py
+- 📂 data/
+  - 📂 raw/
+    - 📄 weatherAUS.csv
+- 📄 dvc.yaml
 - 📂 mlruns/
-  - 📂 .trash/
   - 📂 0/
     - 📄 meta.yaml
   - 📂 676842097702884440/
     - 📂 551336bc05f34e92af18261c098d0a81/
-      - 📂 artifacts/
       - 📄 meta.yaml
       - 📂 metrics/
         - 📄 accuracy
@@ -39,7 +37,6 @@
         - 📄 mlflow.source.type
         - 📄 mlflow.user
     - 📂 c70b281b45cb47dba487f861d15f6b8b/
-      - 📂 artifacts/
       - 📄 meta.yaml
       - 📂 metrics/
         - 📄 accuracy
@@ -54,7 +51,6 @@
         - 📄 mlflow.source.type
         - 📄 mlflow.user
     - 📂 ec2bc929f28142d4960a5f37467e04c7/
-      - 📂 artifacts/
       - 📄 meta.yaml
       - 📂 metrics/
         - 📄 accuracy
@@ -69,11 +65,14 @@
         - 📄 mlflow.source.type
         - 📄 mlflow.user
     - 📄 meta.yaml
-  - 📂 models/
+- 📂 models/
+  - 📄 xgboost_model.pkl.dvc
+- 📂 notebooks/
+  - 📄 initial_exploration.ipynb
 - 📄 requirements.txt
+- 📂 src/
+  - 📄 preprocessing.py
+  - 📄 train_model.py
 - 📂 tests/
   - 📄 test_example.py
 - 📄 train.py
-- 📄 weatherAUS.csv
-- 📄 xgboost_model.pkl
-- 📄 xgboost_model.pkl.dvc
